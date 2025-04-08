@@ -69,7 +69,8 @@ else
         exit $INCORRECT_TELEMETRY_VALUE
     fi
 fi
-TELEMETRY_ARGS+=" --port $PORT"
+TELEMETRY_ARGS
+
 
 CLIENT_AUTH=$(extract_field "$GNMI" '.client_auth')
 if [ -z $CLIENT_AUTH ] || [ $CLIENT_AUTH == "false" ]; then
