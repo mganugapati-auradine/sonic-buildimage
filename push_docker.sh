@@ -1,4 +1,4 @@
-#! /bin/bash
+ii#! /bin/bash
 
 sonic_version=""
 sonic_platform=""
